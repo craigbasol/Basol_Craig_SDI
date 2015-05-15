@@ -43,3 +43,23 @@ console.log(stationOne);
 var costOne = stationOne * gasFill;
 // log to console
 console.log(costOne);
+
+// Prompt for distance to second station
+var distance = prompt('How far, in miles, is it to the second gas station?');
+// log to console
+console.log(distance);
+
+// Prompt for gas mileage
+var mileage = prompt('How many miles to the gallon does your car average?');
+// log to console
+console.log(mileage);
+
+// Calculate extra gas needed to reach second station
+var gasBurn = distance / mileage;
+// log to console
+console.log(gasBurn);
+
+// Calculate new fill amount needed
+gasBurn += gasFill;
+// log to console
+console.log(gasBurn);
