@@ -102,4 +102,7 @@ For the second set I used a tank size of 13 gal, 0.33 of the tank remaining and 
 This gave me a first station price of $23.26 after rounding.
 I used a distance of 3 miles and mileage of 18 mpg for an additional 0.17 gallons (after rounding) used and a total amount needed of roughly 8.88 gal.
 I used $2.58 for the second station price for a rounded second total of $22.90 and a difference of $0.36.
+
+Personal note for the assignment: I really wanted to work an array into this somehow, but I didn't see anywhere it would fit without being unnecessary.
+As such I felt it would be better to take the hit in the grade than add something that might obfuscate the code or worse, break functionality.
  */
