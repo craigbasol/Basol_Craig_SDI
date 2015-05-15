@@ -27,9 +27,19 @@ var tankAmnt = prompt('As a decimal, how much gas do you have left? [e.g. About 
 console.log(tankAmnt);
 
 // Approximate gas needed to fill tank
-var tankFill = 1 - tankAmnt;
+tankAmnt --;
 // log to console
-console.log(tankFill);
-var gasFill = tankSize * tankFill;
+console.log(tankAmnt);
+var gasFill = tankSize * Math.abs(tankAmnt);
 // log to console
 console.log(gasFill);
+
+// Prompt for gas price at first station
+var stationOne = prompt('How much per gallon is gas at the first station?');
+// log to console
+console.log(stationOne);
+
+// Calculate cost for filling up at first station
+var costOne = stationOne * gasFill;
+// log to console
+console.log(costOne);
