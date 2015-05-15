@@ -59,7 +59,33 @@ var gasBurn = distance / mileage;
 // log to console
 console.log(gasBurn);
 
-// Calculate new fill amount needed
+// Calculate new fill amount needed and store difference
+var gasDiff = gasBurn;
 gasBurn += gasFill;
 // log to console
 console.log(gasBurn);
+
+// Prompt for gas price at second station
+var stationTwo = prompt('How much per gallon is gas at the second station?');
+// log to console
+console.log(stationTwo);
+
+// Calculate cost for filling up at second station
+var costTwo = stationTwo * gasBurn;
+// log to console
+console.log(costTwo);
+
+// Return normal monetary values for costs
+costOne = costOne.toFixed(2);
+costTwo = costTwo.toFixed(2);
+// log to console
+console.log(costOne);
+console.log(costTwo);
+
+// Calculate difference in price
+var difference = Math.abs(costOne - costTwo);
+// log to console
+console.log(difference);
+
+// Deliver final results to user
+alert('Thanks '+name+'! Let\'s take a look at what we\'ve come up with. Filling up at the first station will cost you $'+costOne+'. If you drive to the second gas station, you will burn an additional '+gasDiff+' gallon(s) of fuel. The cost to fill up at the second station will be $'+costTwo+'. That\'s a difference of $'+difference+'!')
