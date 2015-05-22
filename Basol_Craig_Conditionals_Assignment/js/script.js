@@ -15,7 +15,7 @@ console.log(user);
 
 // Validate user name
 if (user === ''){
- user=prompt('Can you at least enter a fake name?');
+ user = prompt('Can you at least enter a fake name?');
 }
 // Print to console
 console.log(user);
@@ -25,10 +25,18 @@ console.log(user);
 var golferOne = [];
 var golferOneName = prompt('What is the first golfer\'s name?');
 if (golferOneName === '' || !(isNaN(golferOneName))){
-golferOneName=prompt('Can you at least enter a fake name?');
+golferOneName = prompt('Can you at least enter a fake name?');
 }
-var golferOneMember = prompt('Is this person a member at the course?');
+var oneMember = prompt('Is this person a member at the course?');
+var golferOneMember = oneMember.toLocaleLowerCase();
+// Print to console
+console.log(golferOneMember);
+var members = 0;
+var guests = 0;
+(golferOneMember === 'yes') ? members++ : guests++ ;
 golferOne.push(golferOneName);
 golferOne.push(golferOneMember);
 // Print to console
 console.log(golferOne);
+console.log(members);
+console.log(guests);
