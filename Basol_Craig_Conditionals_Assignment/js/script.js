@@ -129,3 +129,9 @@ alert('Please verify you have '+guests+' guests with you. If that is correct, yo
 alert('Please verify that all '+members+' players are members. If that is correct, your total today comes to $'+cost+'. Is there anything else we can do for you today '+user+'?');
  console.log('Please verify that all '+members+' players are members. If that is correct, your total today comes to $'+cost+'. Is there anything else we can do for you today '+user+'?')
 }
+
+/*
+I input two members and two guests for a total cost of $100 and the second alert.
+For no members, I got a price of $120 and the first alert.
+For all members, I got a price of $80 and the third alert.
+ */
