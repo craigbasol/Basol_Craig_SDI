@@ -6,7 +6,7 @@ Section 01
 Conditionals Assignment
 */
 
-// Calculate greens fees for a golf party
+// Calculate greens fees for a golf party of four
 
  // Ask user's name before anything
 var user = prompt('What is your name?');
@@ -14,8 +14,10 @@ var user = prompt('What is your name?');
 console.log(user);
 
 // Validate user name
-if (user === ''){
+if (user === '' || !(isNaN(user))) {
  user = prompt('Can you at least enter a fake name?');
+} else {
+ alert('Okay '+user+', so let\'s find out how much it will be for your party of four on the golf course today!')
 }
 // Print to console
 console.log(user);
@@ -94,3 +96,36 @@ golferFour.push(golferFourMember);
 console.log(golferFour);
 console.log(members);
 console.log(guests);
+
+/*
+// Create name arrays
+var memberNames = [];
+var guestNames = [];
+(golferOneMember === 'yes') ? memberNames.push(golferOneName); : guestNames.push(golferOneName)
+(golferTwoMember === 'yes') ? memberNames.push(golferTwoName); : guestNames.push(golferTwoName)
+(golferThreeMember === 'yes') ? memberNames.push(golferThreeName); : guestNames.push(golferThreeName)
+(golferFourMember === 'yes') ? memberNames.push(golferFourName); : guestNames.push(golferFourName)
+// Print to console
+console.log(memberNames);
+console.log(guestNames);
+*/
+
+// Calculate fees
+var memberCost = 20;
+var guestCost = 30;
+var cost = members * memberCost;
+cost += guests * guestCost;
+// Print to console
+console.log(cost);
+
+// Collect and report
+if (members === 0){
+alert('Since there are no members in your group today, your total will be $'+cost+'. Is there anything else we can do for you today '+user+'?');
+ console.log('Since there are no members in your group today, your total will be $'+cost+'. Is there anything else we can do for you today '+user+'?');
+} else if (members < 4) {
+alert('Please verify you have '+guests+' guests with you. If that is correct, your total today comes to $'+cost+'. Is there anything else we can do for you today '+user+'?');
+ console.log('Please verify you have '+guests+' guests with you. If that is correct, your total today comes to $'+cost+'. Is there anything else we can do for you today '+user+'?');
+} else {
+alert('Please verify that all '+members+' players are members. If that is correct, your total today comes to $'+cost+'. Is there anything else we can do for you today '+user+'?');
+ console.log('Please verify that all '+members+' players are members. If that is correct, your total today comes to $'+cost+'. Is there anything else we can do for you today '+user+'?')
+}
