@@ -9,3 +9,11 @@
 
 alert('\'Ello there, name\'s Pip! Welcome to the cafe!');
 
+var foodOrDrinks = prompt('Would you like to get some food or are you just stopping in for drinks?');
+foodOrDrinks.toLowerCase();
+
+while (foodOrDrinks != 'food' && foodOrDrinks != 'drinks'){
+    foodOrDrinks = prompt('I know my accent\'s a little thick, so let\'s try this again:\nWould you like to get some food or are you just stopping in for drinks?');
+    foodOrDrinks.toLowerCase();
+}
+
