@@ -124,3 +124,9 @@ function drinkOrder(order, currentTotal){
     return currentTotal;
     //console.log(currentTotal);
 }
+
+/*
+I ordered up a salad and a beer and came up with a total of $10
+A straight beer came out to $6
+Three beers came to $18
+ */
